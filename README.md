@@ -1,16 +1,16 @@
-# 🌦️ Weather API 
+#  Weather API 
 
-## 📌 Project Overview
+##  Project Overview
 
 This project is a **Weather AI application** built using **Hugging Face LLMs, Function Calling, Streamlit, and Open-Meteo APIs**.
 
 The application allows users to ask questions about the weather in a city. The LLM identifies when weather information is required, calls the `get_weather(city)` Python function, and the function fetches real-time weather data from Open-Meteo.
 
-## 🌐 Live Demo
+##  Live Demo
 
-🚀 Link: https://weather-api-2wfc23dpug8pecwepxfjbz.streamlit.app/
+ Link: https://weather-api-2wfc23dpug8pecwepxfjbz.streamlit.app/
 
-## 🎯 Objectives
+##  Objectives
 
 * Understand Function Calling in LLMs
 * Integrate Hugging Face `InferenceClient`
@@ -20,7 +20,7 @@ The application allows users to ask questions about the weather in a city. The L
 * Send tool results back to the LLM
 * Display the final response using Streamlit
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
 User
@@ -42,7 +42,7 @@ LLM
 Final Weather Response
 ```
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * Streamlit
@@ -54,7 +54,7 @@ Final Weather Response
 * JSON
 * Function Calling
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 Weather-API/
@@ -67,7 +67,7 @@ Weather-API/
     └── secrets.toml
 ```
 
-## ⚙️ Installation
+##  Installation
 
 Clone the repository:
 
@@ -82,7 +82,7 @@ Install the required packages:
 pip install -r requirements.txt
 ```
 
-## 🔑 Hugging Face Token
+##  Hugging Face Token
 
 Create a Hugging Face Access Token and store it securely in:
 
@@ -96,7 +96,7 @@ Add:
 HF_TOKEN = "your_hugging_face_token"
 ```
 
-⚠️ **Never upload `secrets.toml` to GitHub.**
+ **Never upload `secrets.toml` to GitHub.**
 
 Add it to `.gitignore`:
 
@@ -104,7 +104,7 @@ Add it to `.gitignore`:
 .streamlit/secrets.toml
 ```
 
-## ▶️ Run the Application
+##  Run the Application
 
 Start the Streamlit application:
 
@@ -114,7 +114,7 @@ streamlit run app.py
 
 The application will open in your browser.
 
-## 💬 Example
+##  Example
 
 User:
 
@@ -132,7 +132,7 @@ The Python function fetches the weather data from Open-Meteo and sends the resul
 
 The application then displays a natural-language weather response.
 
-## 🔄 How Function Calling Works
+##  How Function Calling Works
 
 1. The user asks a weather-related question.
 2. The LLM receives the question and the available `get_weather` tool.
@@ -144,7 +144,7 @@ The application then displays a natural-language weather response.
 8. The tool result is sent back to the LLM.
 9. The LLM generates the final response for the user.
 
-## 🌐 APIs Used
+##  APIs Used
 
 ### Open-Meteo Geocoding API
 
@@ -158,7 +158,7 @@ Used to retrieve current weather information such as:
 * Humidity
 * Wind Speed
 
-## 🤖 Hugging Face Model
+##  Hugging Face Model
 
 The application uses:
 
@@ -168,7 +168,7 @@ Qwen/Qwen2.5-72B-Instruct
 
 through the Hugging Face `InferenceClient`.
 
-## 🔐 Security
+##  Security
 
 The Hugging Face API token is stored using Streamlit Secrets.
 
@@ -178,7 +178,7 @@ The following file should **not** be committed to GitHub:
 .streamlit/secrets.toml
 ```
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 * Add weather forecasts for multiple days
 * Add weather icons
@@ -187,7 +187,7 @@ The following file should **not** be committed to GitHub:
 * Improve the user interface
 * Deploy the application online
 
-## 📚 Learning Outcome
+##  Learning Outcome
 
 This project demonstrates how an LLM can work together with Python functions and external APIs.
 
